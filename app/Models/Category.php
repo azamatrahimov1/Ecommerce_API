@@ -13,7 +13,7 @@ class Category extends Model
 
     protected $fillable = ['name', 'icon', 'order'];
 
-    public $translatable = ['name'];
+    public array $translatable = ['name'];
 
     public function products(): HasMany
     {
